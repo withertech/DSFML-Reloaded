@@ -7,7 +7,7 @@ CMakeFiles/
 *.cmake
 Makefile
 CMakeCache.txt
-libdsfml.a
+libdsfml-reloaded.a
 .dub/
 build
 build.exe

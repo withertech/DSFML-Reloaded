@@ -1,4 +1,4 @@
-set(SRCROOT ${PROJECT_SOURCE_DIR}/Graphics)
+set(SRCROOT ${PROJECT_SOURCE_DIR}/src/DSFMLC/Graphics)
 
 # all source files
 set(SRC
@@ -31,7 +31,7 @@ source_group("" FILES ${SRC})
 
 
 #build only object files that can be linked into a d static library
-add_library(dsfmlc-graphics OBJECT ${SRC})
+add_library(dsfmlc-graphics STATIC ${SRC})
 
 #if(MSVC)
     #target_link_libraries(dsfmlc-graphics STATIC opengl32.lib)

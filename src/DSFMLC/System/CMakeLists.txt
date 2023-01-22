@@ -1,4 +1,4 @@
-set(SRCROOT ${PROJECT_SOURCE_DIR}/System)
+set(SRCROOT ${PROJECT_SOURCE_DIR}/src/DSFMLC/System)
 
 set(SRC
     ${SRCROOT}/DStream.hpp
@@ -12,4 +12,4 @@ set(SRC
 )
 
 #build only object files that can be linked into a d static library
-add_library(dsfmlc-system OBJECT ${SRC})
+add_library(dsfmlc-system STATIC ${SRC})

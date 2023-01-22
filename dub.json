@@ -1,18 +1,24 @@
 {
-        "name": "dsfml",
-        "description": "DSFML binding for SFML-The Simple and Fast Multimedia Library",
+        "name": "dsfml-reloaded",
+        "description": "fork of the DSFML binding for SFML-The Simple and Fast Multimedia Library",
         "authors": ["Jeremy DeHaan"],
         "homepage": "https://github.com/Jebbs/DSFML",
         "version":"2.4.0",
         "license": "Zlib",
         "dependencies": {
-            "dsfml:audio": "~>2.4",
-            "dsfml:graphics": "~>2.4",
-            "dsfml:window": "~>2.4",
-            "dsfml:network": "~>2.4",
-            "dsfml:system": "~>2.4"
+            "dsfml-reloaded:audio": "~>2.4",
+            "dsfml-reloaded:graphics": "~>2.4",
+            "dsfml-reloaded:window": "~>2.4",
+            "dsfml-reloaded:network": "~>2.4",
+            "dsfml-reloaded:system": "~>2.4"
         },
-        "subPackages":
+    "preGenerateCommands": [
+        "./build-dsfmlc.sh"
+    ],
+    "lflags": [
+        "-L./lib"
+    ],
+    "subPackages":
         [
                 {
                         "name": "audio",
@@ -21,7 +27,7 @@
                         "libs": [ "dsfmlc-audio" ],
                         "dependencies":
                         {
-                                "dsfml:system": "~>2.4"
+                                "dsfml-reloaded:system": "~>2.4"
                         }
                 },
                 {
@@ -31,8 +37,8 @@
                         "libs": [ "dsfmlc-graphics" ],
                         "dependencies":
                         {
-                                "dsfml:system": "~>2.4",
-                                "dsfml:window": "~>2.4"
+                                "dsfml-reloaded:system": "~>2.4",
+                                "dsfml-reloaded:window": "~>2.4"
                         }
                 },
                 {
@@ -41,7 +47,7 @@
                         "libs": [ "dsfmlc-window" ],
                         "dependencies":
                         {
-                                "dsfml:system": "~>2.4"
+                                "dsfml-reloaded:system": "~>2.4"
                         }
                 },
                 {
@@ -51,7 +57,7 @@
                         "libs": [ "dsfmlc-network" ],
                         "dependencies":
                         {
-                                "dsfml:system": "~>2.4"
+                                "dsfml-reloaded:system": "~>2.4"
                         }
                 },
                 {

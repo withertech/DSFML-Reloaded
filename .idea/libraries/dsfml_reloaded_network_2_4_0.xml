@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dsfml-reloaded:network-2.4.0" type="DLangLib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

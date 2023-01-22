@@ -1,4 +1,4 @@
-set(SRCROOT ${PROJECT_SOURCE_DIR}/Network)
+set(SRCROOT ${PROJECT_SOURCE_DIR}/src/DSFMLC/Network)
 
 # all source files
 set(SRC
@@ -32,4 +32,4 @@ set(SRC
 source_group("" FILES ${SRC})
 
 #build only object files that can be linked into a d static library
-add_library(dsfmlc-network OBJECT ${SRC})
+add_library(dsfmlc-network STATIC ${SRC})
